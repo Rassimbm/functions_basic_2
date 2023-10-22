@@ -14,12 +14,20 @@ Example: countdown(5) should return [5,4,3,2,1,0]
 2 - First Plus Length - Create a function that accepts a list and returns the sum of the first value in the list plus the list's length.
 Example: first_plus_length([1,2,3,4,5]) should return 6 (first value: 1 + length: 5)
 """
-def first_plus_length(list):
-    sum = 0
-    if not list:
-        return "list is empty"
-    else:
-        sum = list[0] + len(list)
-        print(sum)
-    return sum
-first_plus_length([1,2,3,4,5])
+# def first_plus_length(list):
+#     sum = 0
+#     if not list:
+#         return "list is empty"
+#     else:
+#         sum = list[0] + len(list)
+#     return sum
+# print(first_plus_length([1,2,3,4,5]))
+
+"""
+3 - Print and Return - Create a function that will receive a list with two numbers. Print the first value and return the second.
+Example: print_and_return([1,2]) should print 1 and return 2
+"""
+def print_and_return(list):
+    print(list[0])
+    return list[1]
+print(print_and_return([1,2]))
